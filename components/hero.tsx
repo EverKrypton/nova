@@ -1,60 +1,109 @@
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import type { CSSProperties } from "react";
+import { brand, deck } from "@/lib/mock-data";
 import { whatsappLink, whatsappMessages } from "@/lib/whatsapp";
+import { ArrowDown, ArrowUpRight, RegistrationMark } from "./marks";
+
+function cardStyle(index: number): CSSProperties {
+  const slot = index - (deck.length - 1) / 2;
+
+  return {
+    "--i": index,
+    "--dy": `${Math.abs(slot) * 5}px`,
+    "--rot": `${slot * 3.4}deg`,
+  } as CSSProperties;
+}
 
 export function Hero() {
   return (
-    <section className="hero" id="inicio">
-      <div className="container hero-grid">
-        <div>
-          <span className="eyebrow">Diseño digital para negocios</span>
-          <h1>Tu negocio merece una presencia <span className="accent-text">extraordinaria.</span></h1>
-          <p className="hero-copy">Creamos páginas web y diseños gráficos que presentan tu negocio con claridad, personalidad y una imagen profesional.</p>
-          <div className="hero-actions">
-            <a className="button" href={whatsappLink(whatsappMessages.hero)} target="_blank" rel="noopener noreferrer">
-              Cuéntanos tu idea <ArrowUpRight size={18} aria-hidden="true" />
-            </a>
-            <a className="button button-secondary" href="#servicios">
-              Explorar servicios <ArrowDown size={17} aria-hidden="true" />
-            </a>
-          </div>
-          <div className="hero-note"><span className="status-dot" aria-hidden="true" /> Atención directa y precios por WhatsApp</div>
+    <section className="hero" id="portada">
+      <div className="shell">
+        <div className="hero-meta spec">
+          <span className="spec-row">
+            <span>
+              <b>{brand.name}</b> / Taller gráfico
+            </span>
+            <span>
+              <b>Vol. 01</b> / Muestras
+            </span>
+          </span>
+          <span className="spec-row">
+            <span>ES</span>
+            <span>Web + gráfico</span>
+          </span>
         </div>
-        <div
-          className="hero-art"
-          role="img"
-          aria-label="Composición gráfica conceptual de diseño web y marca"
-        >
-          <div className="art-topbar">
-            <div className="art-lights" aria-hidden="true"><span /><span /><span /></div>
-            <span>NOVAPROYECT / STUDIO</span>
-            <span>01—03</span>
-          </div>
-          <div className="art-content">
-            <div className="art-main-card">
+
+        <div className="hero-grid">
+          <div>
+            <h1>
+              Diseño que se
+              <br />
+              puede <em>tocar</em>.
+            </h1>
+
+            <p className="hero-lede">
+              Páginas web y piezas gráficas para negocios que quieren verse tan
+              bien como trabajan. De la primera idea a la entrega, en un solo
+              lugar.
+            </p>
+
+            <div className="hero-actions">
+              <a
+                className="btn"
+                href={whatsappLink(whatsappMessages.hero)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contar mi proyecto <ArrowUpRight size={16} />
+              </a>
+              <a className="btn-ghost" href="#servicios">
+                Ver el muestrario <ArrowDown size={15} />
+              </a>
+            </div>
+
+            <div className="hero-strip">
               <div>
-                <span className="art-label">Tu siguiente paso</span>
-                <h2>Ideas con<br />dirección.</h2>
-                <p>Una imagen digital a la altura de tu negocio.</p>
-                <div className="art-lines" aria-hidden="true"><span /><span /><span /></div>
+                <span className="spec">Servicios</span>
+                <b>02</b>
               </div>
-              <span className="art-mini-cta">CREAR ALGO NUEVO <ArrowUpRight size={12} aria-hidden="true" /></span>
-            </div>
-            <div className="art-side-stack">
-              <div className="art-side-card">
-                <div className="art-orb" aria-hidden="true" />
-                <div><strong>Diseño con intención</strong><br /><small>Identidad visual</small></div>
+              <div>
+                <span className="spec">Canal</span>
+                <b>WhatsApp</b>
               </div>
-              <div className="art-side-card">
-                <span className="art-label">Digital first</span>
-                <div><strong>Hecho para conectar</strong><br /><small>Web y creatividad</small></div>
+              <div>
+                <span className="spec">Idioma</span>
+                <b>Español</b>
               </div>
-            </div>
-            <div className="art-bottom-card">
-              <strong>De la idea a tu presencia digital.</strong>
-              <span>EST. NOVAPROYECT ↗</span>
+              <div>
+                <span className="spec">Formato</span>
+                <b>Web + gráfico</b>
+              </div>
             </div>
           </div>
+
+          <div className="deck" aria-hidden="true">
+            {deck.map((card, index) => (
+              <article className="deck-card" key={card.code} style={cardStyle(index)}>
+                <div className="deck-card-top">
+                  <span>{card.code}</span>
+                  <RegistrationMark size={11} />
+                </div>
+                <p className="deck-card-title">{card.title}</p>
+                <div className="deck-chip" data-tone={card.tone}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                </div>
+                <p className="deck-card-foot">{card.note}</p>
+              </article>
+            ))}
+          </div>
         </div>
+
+        <ul className="sr-only">
+          {deck.map((card) => (
+            <li key={card.code}>
+              {card.title} — {card.note}
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

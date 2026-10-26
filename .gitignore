@@ -7,3 +7,9 @@ build
 npm-debug.log*
 *.tsbuildinfo
 .vercel
+.impeccable/live/sessions/
+.impeccable/live/inject-journal.json
+.impeccable/live/roots.json
+.impeccable/config.local.json
+.impeccable/review/
+.impeccable/mocks/

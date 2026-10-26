@@ -1,29 +1,62 @@
-import { ArrowUpRight, Check } from "lucide-react";
 import { services } from "@/lib/mock-data";
 import { whatsappLink, whatsappMessages } from "@/lib/whatsapp";
+import { ArrowUpRight, Tick } from "./marks";
 
 export function Services() {
   return (
-    <section className="section" id="servicios">
-      <div className="container">
-        <div className="section-heading">
-          <div><span className="eyebrow">Lo que hacemos</span><h2>Diseño pensado para hacer crecer tu presencia.</h2></div>
-          <p>Soluciones visuales y digitales para que tu negocio se comunique mejor y genere confianza.</p>
+    <section className="section paper on-paper" id="servicios">
+      <div className="shell">
+        <div className="section-head">
+          <h2>
+            Lo que sale del <em>taller</em>.
+          </h2>
+          <p className="head-note">
+            Dos servicios, un mismo criterio: que tu negocio se vea profesional
+            en pantalla y en papel. El precio se conversa por WhatsApp según lo
+            que necesites.
+          </p>
         </div>
+
         <div className="services-grid">
           {services.map((service) => (
-            <article className="service-card" key={service.number}>
-              <span className="service-number">{service.number}</span>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <ul className="service-list">
-                {service.deliverables.map((deliverable) => (
-                  <li key={deliverable}><Check size={16} aria-hidden="true" />{deliverable}</li>
-                ))}
-              </ul>
-              <a className="button button-secondary service-cta" href={whatsappLink(whatsappMessages.services)} target="_blank" rel="noopener noreferrer">
-                Consultar precio <ArrowUpRight size={17} aria-hidden="true" />
-              </a>
+            <article className="service-sheet" key={service.number}>
+              <div className="service-band">
+                <span>
+                  Muestra <b>{service.number}</b>
+                </span>
+                <span>{service.spec[0][1]}</span>
+              </div>
+
+              <div className="service-body">
+                <span className="service-number" aria-hidden="true">
+                  {service.number}
+                </span>
+                <h3>{service.title}</h3>
+                <p className="service-lead">{service.lead}</p>
+
+                <ul className="deliverables">
+                  {service.deliverables.map((deliverable) => (
+                    <li key={deliverable}>
+                      <Tick size={13} />
+                      {deliverable}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="service-foot">
+                  <span className="spec">
+                    {service.spec[1][0]} · {service.spec[1][1]}
+                  </span>
+                  <a
+                    className="link-line"
+                    href={whatsappLink(whatsappMessages.services)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Consultar <ArrowUpRight size={13} />
+                  </a>
+                </div>
+              </div>
             </article>
           ))}
         </div>
