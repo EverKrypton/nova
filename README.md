@@ -42,6 +42,8 @@ Los enlaces de WhatsApp se generan con `whatsappLink()` de `lib/whatsapp.ts`, de
 
 ## Despliegue
 
+Producción: https://nova-xi-vert-33.vercel.app
+
 El proyecto está desplegado en Vercel y conectado al repositorio de GitHub: cada push a `main` genera un despliegue automático.
 
 ## Notas
