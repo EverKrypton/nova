@@ -2,11 +2,11 @@ import { Asterisk } from "./marks";
 
 const items = [
   "Páginas web",
-  "Identidad visual",
-  "Piezas para redes",
-  "Material promocional",
-  "Diseño responsive",
-  "Contacto directo",
+  "Diseño gráfico",
+  "Videojuegos",
+  "Software a medida",
+  "Apps y APK",
+  "Mantenimiento",
 ];
 
 function Strip() {

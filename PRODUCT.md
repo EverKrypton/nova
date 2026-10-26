@@ -12,7 +12,7 @@ Dueños de negocios pequeños y emprendedores hispanohablantes (sin foco geográ
 
 ## Product Purpose
 
-Landing page comercial de NovaProyect que convierte visitantes en conversaciones de WhatsApp para servicios de páginas web y diseño gráfico. El sitio existe para generar mensajes calificados, no para educar ni para vender en línea. El éxito se mide en conversaciones iniciadas.
+Landing page comercial de NovaProyect que convierte visitantes en conversaciones de WhatsApp para servicios de diseño y desarrollo: web, gráfico, videojuegos, software y apps Android. El sitio existe para generar mensajes calificados, no para educar ni para vender en línea. El éxito se mide en conversaciones iniciadas.
 
 ## Positioning
 
@@ -28,7 +28,7 @@ Estudio pequeño (2-5 personas) que entrega web y diseño gráfico como una sola
 ## Capabilities and Constraints
 
 - Una sola página con secciones: inicio/hero, servicios, proyectos, contacto y footer, más navegación móvil.
-- Dos servicios confirmados: páginas web y diseño gráfico, con entregables listados.
+- Seis servicios confirmados, con entregables listados: páginas web, diseño gráfico, videojuegos, software a medida, apps Android (APK) y mantenimiento.
 - El precio no se publica en el sitio: se consulta siempre por WhatsApp (decisión confirmada).
 - Idioma único: español. Sin versión en inglés.
 - Sin modo claro: la identidad es solo oscura.

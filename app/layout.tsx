@@ -23,7 +23,7 @@ const mono = Martian_Mono({
 });
 
 const description =
-  "Páginas web y diseño gráfico para negocios que quieren verse tan bien como trabajan. De la primera idea a la entrega, con trato directo por WhatsApp.";
+  "Estudio de diseño y desarrollo: páginas web, diseño gráfico, videojuegos, software a medida y apps Android. De la primera idea a la entrega, con trato directo por WhatsApp.";
 
 const siteUrl = "https://nova-xi-vert-33.vercel.app";
 
@@ -41,6 +41,10 @@ export const metadata: Metadata = {
     "páginas web",
     "identidad visual",
     "diseño para redes",
+    "desarrollo de videojuegos",
+    "desarrollo de software",
+    "apps Android",
+    "APK",
     "estudio de diseño",
   ],
   authors: [{ name: brand.name }],
@@ -51,12 +55,12 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: siteUrl,
     siteName: brand.name,
-    title: `${brand.name} — Diseño que se puede tocar`,
+    title: `${brand.name} — Diseño y desarrollo digital`,
     description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${brand.name} — Diseño que se puede tocar`,
+    title: `${brand.name} — Diseño y desarrollo digital`,
     description,
   },
   robots: { index: true, follow: true },
@@ -83,6 +87,9 @@ const jsonLd = {
     "Diseño gráfico",
     "Identidad visual",
     "Piezas para redes sociales",
+    "Desarrollo de videojuegos",
+    "Desarrollo de software",
+    "Aplicaciones Android",
   ],
 };
 

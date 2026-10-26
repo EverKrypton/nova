@@ -1,6 +1,6 @@
 # NovaProyect
 
-Landing page comercial para captar clientes de diseño web y diseño gráfico mediante WhatsApp.
+Landing page comercial para captar clientes de diseño y desarrollo (web, gráfico, videojuegos, software y apps Android) mediante WhatsApp.
 
 ## Requisitos
 

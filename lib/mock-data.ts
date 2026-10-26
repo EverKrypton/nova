@@ -52,21 +52,21 @@ export const deck = [
   },
   {
     code: "NV-02",
-    title: "Diseño gráfico",
-    note: "Soporte · impreso",
-    tone: "paper",
-  },
-  {
-    code: "NV-03",
-    title: "Identidad visual",
-    note: "Sistema · marca",
+    title: "Videojuegos",
+    note: "Formato · juego",
     tone: "ink",
   },
   {
-    code: "NV-04",
-    title: "Piezas para redes",
-    note: "Formato · vertical",
+    code: "NV-03",
+    title: "Software",
+    note: "Formato · sistema",
     tone: "halftone",
+  },
+  {
+    code: "NV-04",
+    title: "Apps y APK",
+    note: "Formato · móvil",
+    tone: "paper",
   },
 ] as const;
 
@@ -98,6 +98,66 @@ export const services: Service[] = [
     spec: [
       ["Soporte", "Impreso y digital"],
       ["Entregables", "03"],
+      ["Canal", "WhatsApp"],
+    ],
+  },
+  {
+    number: "03",
+    title: "Videojuegos",
+    lead: "Juegos 2D y 3D para web o móvil: prototipo jugable, arte, mecánicas y build lista para publicar.",
+    deliverables: [
+      "Prototipo jugable",
+      "Arte y mecánicas",
+      "Build publicable",
+    ],
+    spec: [
+      ["Motor", "Unity o web"],
+      ["Entregables", "03"],
+      ["Canal", "WhatsApp"],
+    ],
+  },
+  {
+    number: "04",
+    title: "Software a medida",
+    lead: "Herramientas internas, paneles y automatizaciones que quitan trabajo manual a tu negocio.",
+    deliverables: [
+      "Panel o herramienta",
+      "Base de datos",
+      "Despliegue y accesos",
+    ],
+    spec: [
+      ["Soporte", "Web o escritorio"],
+      ["Entregables", "03"],
+      ["Canal", "WhatsApp"],
+    ],
+  },
+  {
+    number: "05",
+    title: "Apps y APK",
+    lead: "Aplicaciones móviles con su APK firmado, listas para instalar o subir a la tienda.",
+    deliverables: [
+      "App funcional",
+      "APK firmado",
+      "Guía de instalación",
+    ],
+    spec: [
+      ["Soporte", "Android"],
+      ["Entregables", "03"],
+      ["Canal", "WhatsApp"],
+    ],
+  },
+  {
+    number: "06",
+    title: "Mantenimiento",
+    lead: "Tu página o app sigue viva: cambios de contenido, mejoras, arreglos y respaldo cuando lo necesites.",
+    deliverables: [
+      "Cambios y arreglos",
+      "Respaldos",
+      "Soporte por WhatsApp",
+    ],
+    spec: [
+      ["Soporte", "Web y app"],
+      ["Entregables", "Continuo"],
       ["Canal", "WhatsApp"],
     ],
   },

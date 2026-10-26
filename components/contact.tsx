@@ -36,7 +36,7 @@ export function Contact() {
             <dl>
               <div>
                 <dt>Servicio</dt>
-                <dd>Página web o diseño gráfico</dd>
+                <dd>Web, juego, software o app</dd>
               </div>
               <div>
                 <dt>Canal</dt>

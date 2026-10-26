@@ -28,7 +28,7 @@ export function Hero() {
           </span>
           <span className="spec-row">
             <span>ES</span>
-            <span>Web + gráfico</span>
+            <span>Web · juego · software</span>
           </span>
         </div>
 
@@ -41,9 +41,8 @@ export function Hero() {
             </h1>
 
             <p className="hero-lede">
-              Páginas web y piezas gráficas para negocios que quieren verse tan
-              bien como trabajan. De la primera idea a la entrega, en un solo
-              lugar.
+              Web, diseño gráfico, videojuegos, software y apps. Un solo taller
+              para todo lo que tu negocio necesita construir.
             </p>
 
             <div className="hero-actions">
@@ -63,7 +62,7 @@ export function Hero() {
             <div className="hero-strip">
               <div>
                 <span className="spec">Servicios</span>
-                <b>02</b>
+                <b>06</b>
               </div>
               <div>
                 <span className="spec">Canal</span>
@@ -74,8 +73,8 @@ export function Hero() {
                 <b>Español</b>
               </div>
               <div>
-                <span className="spec">Formato</span>
-                <b>Web + gráfico</b>
+                <span className="spec">Formatos</span>
+                <b>Web · app · juego</b>
               </div>
             </div>
           </div>

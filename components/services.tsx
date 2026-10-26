@@ -11,8 +11,8 @@ export function Services() {
             Lo que sale del <em>taller</em>.
           </h2>
           <p className="head-note">
-            Dos servicios, un mismo criterio: que tu negocio se vea profesional
-            en pantalla y en papel. El precio se conversa por WhatsApp según lo
+            Seis servicios, un mismo criterio: que lo que construimos se vea
+            profesional y funcione. El precio se conversa por WhatsApp según lo
             que necesites.
           </p>
         </div>
